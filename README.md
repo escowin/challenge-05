@@ -1,2 +1,1 @@
-# challenge-05
-Third-Party APIs Challenge: Work Day Scheduler
+# Work Day Scheduler Starter Code
