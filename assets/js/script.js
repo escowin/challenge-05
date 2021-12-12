@@ -1,14 +1,26 @@
-// GIVEN I am using a daily planner to create a schedule
-// WHEN I open the planner
-// THEN the current day is displayed at the top of the calendar
-// WHEN I scroll down
-// THEN I am presented with time blocks for standard business hours
-// WHEN I view the time blocks for that day
-// THEN each time block is color-coded to indicate whether it is in the past, present, or future
-// WHEN I click into a time block
-// THEN I can enter an event
-// WHEN I click the save button for that time block
-// THEN the text for that event is saved in local storage
-// WHEN I refresh the page
-// THEN the saved events persist
+// #1 current day is displayed at the top of the calendar
+$('#currentDay').text(moment().format('MMMM Do YYYY, h:mm:ss a'));
 
+// #2 presented with time blocks for standard business hours
+var dailyEvents = {
+    date: (moment().format('MMMM Do YYYY, h:mm:ss a');
+    09: "",
+    10: "",
+    11: "",
+    12: "",
+    13: "",
+    14: "",
+    15: "",
+    16: "",
+};
+
+// #3 each time block is color-coded to indicate whether it is in the past, present, or future
+var timeOfDay = function() {
+    var currentHour = moment().hour();
+    var textAreaEl = document.querySelectorAll("textarea");
+}
+// #4 click into time block, enter an event
+
+// #5 click save, text for that event is saved in local storage
+
+// #6 refresh page, saved events persist
