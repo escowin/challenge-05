@@ -1,21 +1,20 @@
 # Work Day Scheduler README
 challenge 05 by <a href="https://github.com/escowin">Edwin Escobar</a>
 
+Live URL:
+https://escowin.github.io/challenge-05
+
 GitHub Repo:
 https://github.com/escowin/challenge-05
-Live URL:
+![scheduler screenshot](assets/images/screenshot.jpg)
 
 
-<!-- GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist -->
+Following the challenge prompts:
+_presents time blocks inline with standard business hours.
+_relative to now, time blocks are color-coded to indicate past, present, or future.
+_clicking on time block allows an event to be entered.
+_clicking on the save button saves event to local storage.
+_refreshing page loads & displays saved events.
+
+bonus:
+_saving event also triggers a two second "event saved" text to display for the user after clicking the save button.
