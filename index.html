@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- style sheet for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
@@ -30,6 +31,7 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
+      <p id="saved"></p>
       <!-- Timeblocks go here -->
       <div class="row">
         <!-- Standard Business Hours Timeblocks -->
@@ -37,58 +39,80 @@
         <div id="09" class="container col-12 hour d-flex justify-content-center">
           <label for="event-09a" class="mr-4 time-block">09.00a</label>
           <textarea id="event-09a" class="form-control" data-hour="9" rows="2"></textarea>
-          <button class="saveBtn"><i class="bi bi-calendar-plus-fill"></i><p>sᴀᴠᴇ</p></button>
+          <button class="saveBtn">
+            <i class="bi bi-calendar-plus-fill"></i>
+          </button>
         </div>
         <!-- 10.00a -->
         <div id="10" class="container col-12 hour d-flex justify-content-center">
           <label for="event-10a" class="mr-4 time-block">10.00a</label>
           <textarea id="event-10a" class="form-control" data-hour="10" rows="2"></textarea>
-          <button class="saveBtn"><i class="bi bi-calendar-plus-fill"></i><p>sᴀᴠᴇ</p></button>
+          <button class="saveBtn">
+            <i class="bi bi-calendar-plus-fill"></i>
+          </button>
         </div>
         <!-- 11.00a -->
         <div id="11" class="container col-12 hour d-flex justify-content-center">
           <label for="11a-event" class="mr-4 time-block">11.00a</label>
           <textarea id="11a-event" class="form-control" data-hour="11" rows="2"></textarea>
-          <button class="saveBtn"><i class="bi bi-calendar-plus-fill"></i><p>sᴀᴠᴇ</p></button>
+          <button class="saveBtn">
+            <i class="bi bi-calendar-plus-fill"></i>
+          </button>
         </div>
         <!-- 12.00p -->
         <div id="12" class="container col-12 hour d-flex justify-content-center">
           <label for="event-12p" class="mr-4 time-block">12.00p</label>
           <textarea id="event-12p" class="form-control" data-hour="12" rows="2"></textarea>
-          <button class="saveBtn"><i class="bi bi-calendar-plus-fill"></i><p>sᴀᴠᴇ</p></button>
+          <button class="saveBtn">
+            <i class="bi bi-calendar-plus-fill"></i>
+          </button>
         </div>
         <!-- 01.00p / 13.00 -->
         <div id="13" class="container col-12 hour d-flex justify-content-center">
           <label for="event-01p" class="mr-4 time-block">01.00p</label>
           <textarea id="event-01p" class="form-control" data-hour="13" rows="2"></textarea>
-          <button class="saveBtn"><i class="bi bi-calendar-plus-fill"></i><p>sᴀᴠᴇ</p></button>
+          <button class="saveBtn">
+            <i class="bi bi-calendar-plus-fill"></i>
+          </button>
         </div>
         <!-- 02.00p / 14.00 -->
         <div id="14" class="container col-12 hour d-flex justify-content-center">
           <label for="event-02p" class="mr-4 time-block">02.00p</label>
           <textarea id="event-02p" class="form-control" data-hour="10" rows="2"></textarea>
-          <button class="saveBtn"><i class="bi bi-calendar-plus-fill"></i><p>sᴀᴠᴇ</p></button>
+          <button class="saveBtn">
+            <i class="bi bi-calendar-plus-fill"></i>
+          </button>
         </div>
         <!-- 03.00p / 15.00 -->
         <div id="15" class="container col-12 hour d-flex justify-content-center">
           <label for="event-03p" class="mr-4 time-block">03.00p</label>
           <textarea id="event-03p" class="form-control" data-hour="10" rows="2"></textarea>
-          <button class="saveBtn"><span class="oi oi-plus"></span>s a v e</button>
+          <button class="saveBtn">
+            <i class="bi bi-calendar-plus-fill"></i>
+          </button>
         </div>
         <!-- 04.00p / 16.00 -->
         <div id="16" class="container col-12 hour d-flex justify-content-center">
           <label for="event-04p" class="mr-4 time-block">04.00p</label>
           <textarea id="event-04p" class="form-control" data-hour="10" rows="2"></textarea>
-          <button class="saveBtn"><i class="bi bi-calendar-plus-fill"></i><p>sᴀᴠᴇ</p></button>
+          <button class="saveBtn">
+            <i class="bi bi-calendar-plus-fill"></i>
+          </button>
         </div>
         <!-- 05.00p / 17.00-->
         <div id="17" class="container col-12 hour d-flex justify-content-center">
           <label for="event-05p" class="mr-4 time-block">05.00p</label>
           <textarea id="event-05p" class="form-control" data-hour="10" rows="2"></textarea>
-          <button class="saveBtn"><i class="bi bi-calendar-plus-fill"></i><p>sᴀᴠᴇ</p></button>
+          <button class="saveBtn">
+            <i class="bi bi-calendar-plus-fill"></i>
+          </button>
         </div>
       </div>
     </div>
+
+    <!-- <footer>
+      <h2> challenge 05 by <a href="https://github.com/escowin">Edwin Escobar</a>  </h2>
+    </footer> -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
