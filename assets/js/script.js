@@ -1,7 +1,8 @@
 // #1 current day is displayed at the top of the calendar using moment.js formatting
 $('#currentDay').text(moment().format('MMMM Do YYYY, h:mm:ss a'));
+console.log($)
 
-// #2 presented with time blocks for standard business hours
+// #2 presented with time blocks for standard 9.00a-5.00p business hours
 var dailyEvents = {
     date: moment().format('MMMM Do YYYY'),
     09: "",
@@ -36,23 +37,42 @@ var saveEvents = function(hour, text) {
     var keepCurrentStorage = checkLocalStorage();
     if (!keepCurrentStorage) {
         dailyEvents[hour] = text;
-        localStorage.setItem("Scheduler", JSON.stringify(dailyEvents));
+        localStorage.setItem('scheduler', JSON.stringify(dailyEvents));
     }
     // else () {}???
 };
 
 // #6 refresh page, saved events persist
 var checkLocalStorage = function() {
-
+    var schedule = JSON.parse(localStorage.getItem('scheduler'));
+    if (!schedule) {
+        return false;
+    } else if (schedule.date !== dailyEvents.date) {
+        return false;
+    } else {
+        return true;
+    }
 };
+
+// loading localStorage saved events into scheduler
 var loadEvents = function() {
-
+    var schedule = JSON.parse(localStorage.getItem('scheduler'));
+    if (schedule) {
+        if (schedule.date === moment().format('MMMM Do YYYY')) {
+            for (var i = 9; i < 18; i++) {
+                $('#' + i).children('textarea').val(schedule[i]);
+            }
+        }
+    }
 };
 
-// #4 event listener to make above happen
+// #4 event listener to make #5 & #6 happen
 $('.saveBtn').click(function(){
     var hour = $(this).parent().attr('id');
     var text = $(this).parent().children('textarea').val();
+    if (!text) {
+        alert('nothing to save');
+    }
 });
 
 timeOfDay();
