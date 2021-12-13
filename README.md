@@ -1,6 +1,11 @@
+# Work Day Scheduler README
+challenge 05 by <a href="https://github.com/escowin">Edwin Escobar</a>
+
+GitHub Repo:
+https://github.com/escowin/challenge-05
+Live URL:
 
 
-# Work Day Scheduler Starter Code
 <!-- GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
 THEN the current day is displayed at the top of the calendar
