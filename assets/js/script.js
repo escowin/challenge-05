@@ -4,6 +4,9 @@ $("#currentDay").text(moment().format('dddd, MMMM Do YYYY | h:mm:ss a'));
 // #2 presented with time blocks for standard 9.00a-5.00p business hours
 var dailyEvents = {
     date: moment().format('dddd, MMMM Do YYY'),
+    06: "",
+    07: "",
+    08: "",
     09: "",
     10: "",
     11: "",
@@ -12,7 +15,9 @@ var dailyEvents = {
     14: "",
     15: "",
     16: "",
-    17: ""
+    17: "",
+    18: "",
+    19: ""
 };
 
 // #3 each time block is color-coded to indicate whether it is in the past, present, or future
@@ -73,6 +78,10 @@ var loadEvents = function() {
 $(".saveBtn").click(function() {
     var hour = $(this).parent().attr("id");
     var text = $(this).parent().children("textarea").val();
+    console.log(`
+    \u00A9 Edwin M. Escobar
+    https://github.com/escowin/workday-scheduler
+    `);
     if (!text) {
         // 4a save will not occur without text input
         alert('enter an event before saving');

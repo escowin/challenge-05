@@ -10,6 +10,7 @@ https://github.com/escowin/challenge-05
 
 
 Following the challenge prompts:
+
 _presents time blocks inline with standard business hours.
 _relative to now, time blocks are color-coded to indicate past, present, or future.
 _clicking on time block allows an event to be entered.
