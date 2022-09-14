@@ -9,6 +9,9 @@ body {
   line-height: 1;
   background-color: rgb(160, 151, 151);
   font-variant: small-caps;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 textarea{
@@ -55,7 +58,7 @@ textarea{
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 1px solid #000000;
 }
 
 .past {
