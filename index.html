@@ -25,16 +25,16 @@
   </head>
 
   <body>
-    <!-- note | use as many bootstrap classes as possible before the custome css deep dive -->
-    <header class="jumbotron">
-      <h1 class="display-3">Day planner</h1>
-      <p class="lead">Schedule your life for the day</p>
+    <!-- note | use as many bootstrap classes as possible before the custom css deep dive -->
+    <header class="jumbotron m-0 p-0">
+      <h1 class="display-3">day planner</h1>
+      <p class="lead">Plan your day, plan your life</p>
       <p id="currentDay" class="lead"></p>
-      <!-- allow user to set the day planner time range -->
+      <!-- allow user to set the day planner time range. slider will have two points (start & range). values will set the hours below -->
       <form>
         <div class="form-group mx-5">
           <label for="formConntrolRange">Set your hours</label>
-          <input type="range" class="form-control-range" id="formControlRange">
+          <input type="range" class="form-control-range" id="formControlRange" min="0" max="24">
         </div>
       </form>
     </header>
@@ -44,7 +44,7 @@
       <!-- Timeblocks go here -->
       <div class="row">
         <!-- Standard Business Hours Timeblocks -->
-        <div id="06" class="container col-12 hour d-flex justify-content-center">
+        <div id="06" class="container col-12 hour d-flex justify-content-center ">
           <label for="event-06a" class="mr-4 time-block">06.00a</label>
           <textarea id="event-06a" class="form-control" data-hour="6" rows="2"></textarea>
           <button class="saveBtn">
@@ -146,8 +146,9 @@
           </button>
         </div>
       </div>
+    
     </main>
-<!-- 
+<!-- look into documentation: footer appears behind main atm
     <footer>
       <h2> challenge 05 by <a href="https://github.com/escowin">Edwin Escobar</a>  </h2>
     </footer> -->
