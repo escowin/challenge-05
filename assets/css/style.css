@@ -1,8 +1,3 @@
-/* * {
-  padding: 0;
-  margin: 0;
-} */
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -34,6 +29,10 @@ textarea{
   position: -webkit-sticky;
   top: 0;
   z-index: 9999;
+}
+
+#currentDay {
+  font-size: 1.25rem;
 }
 
 .container {
